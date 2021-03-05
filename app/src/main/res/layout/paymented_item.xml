@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ten_ban"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:text="Bàn 1"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_table_item"
+        android:gravity="center"
+        android:textAllCaps="true"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/ngay_thanh_toan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ten_ban"
+        android:layout_alignBottom="@id/ten_ban"
+        android:text="2020-12-11"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/gio_thanh_toan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/ngay_thanh_toan"
+        android:layout_alignBottom="@id/ngay_thanh_toan"
+        android:layout_marginLeft="20dp"
+
+
+        android:text="20:11"
+        />
+</RelativeLayout>

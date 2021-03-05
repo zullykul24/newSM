@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Không có điều kiện?"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+
+         />
+<LinearLayout
+    android:layout_below="@id/textView4"
+    android:layout_width="match_parent"
+    android:weightSum="2"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:layout_height="60dp">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_ok_not_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:textAllCaps="false"
+            android:text="Xác nhận"
+            android:background="@drawable/them_mon_btn"
+            android:textColor="#fff"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_cancel_not_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:textAllCaps="false"
+            android:text="Huỷ"
+            android:background="@drawable/them_mon_btn"
+            android:textColor="#fff"
+            />
+    </RelativeLayout>
+</LinearLayout>
+
+</RelativeLayout>

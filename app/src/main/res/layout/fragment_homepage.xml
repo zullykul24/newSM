@@ -1,0 +1,234 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/brand_text"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorAccent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sriracha"
+            android:textColor="#fff"
+            android:text="@string/app_name"
+            android:textSize="40sp"
+
+            android:layout_centerInParent="true"
+            ></TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:id="@+id/home_employee_content"
+
+        android:layout_below="@id/brand_text"
+        android:layout_alignParentBottom="true"
+
+        >
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/line1"
+
+            android:layout_height="250dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:paddingVertical="20dp"
+    android:weightSum="3"
+    android:layout_weight="1">
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/new_food"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+              android:layout_centerHorizontal="true"
+                android:background="@drawable/home_item"
+                android:src="@drawable/new_food"
+
+                android:scaleType="fitCenter"
+                android:textSize="12sp"
+
+
+
+
+
+                ></ImageButton>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Món mới"
+                android:layout_below="@id/new_food"
+                android:layout_alignLeft="@id/new_food"
+                android:layout_alignRight="@id/new_food"
+
+
+                android:gravity="center"
+                android:textSize="13sp"
+                android:layout_height="wrap_content"></TextView>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/khuyen_mai"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/discount_2"
+                android:scaleType="centerInside"
+
+                android:layout_centerHorizontal="true"
+
+
+
+                android:background="@drawable/home_item"
+                android:text="Khuyến mãi"></ImageButton>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Khuyến mãi"
+                android:layout_below="@id/khuyen_mai"
+                android:layout_alignLeft="@id/khuyen_mai"
+                android:layout_alignRight="@id/khuyen_mai"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:layout_height="wrap_content"></TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/thanh_toan"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+
+                android:layout_centerHorizontal="true"
+
+                android:scaleType="fitCenter"
+
+
+                android:src="@drawable/payment"
+                android:background="@drawable/home_item"
+                ></ImageButton>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Thanh toán"
+                android:layout_below="@id/thanh_toan"
+                android:layout_alignLeft="@id/thanh_toan"
+                android:layout_alignRight="@id/thanh_toan"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:layout_height="wrap_content"></TextView>
+    </RelativeLayout>
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingVertical="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/history_btn_emp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+
+                        android:src="@drawable/history"
+                        android:background="@drawable/home_item"
+                        ></ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Lịch sử"
+                        android:layout_below="@id/history_btn_emp"
+                        android:layout_alignLeft="@id/history_btn_emp"
+                        android:layout_alignRight="@id/history_btn_emp"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:layout_height="wrap_content"></TextView>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/menu_emp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+
+                        android:scaleType="fitCenter"
+                        android:layout_centerHorizontal="true"
+
+                        android:src="@drawable/food_menu"
+                        android:background="@drawable/home_item"
+                        ></ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Thực đơn"
+                        android:layout_below="@id/menu_emp"
+                        android:layout_alignLeft="@id/menu_emp"
+                        android:layout_alignRight="@id/menu_emp"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:layout_height="wrap_content"></TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/line1"
+            android:id="@+id/text_hot_items"
+            android:fontFamily="@font/sriracha"
+            android:text="Món hot trong tuần"
+            android:paddingLeft="20dp"
+            android:layout_height="wrap_content"></TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:id="@+id/recycle_view_hot_items"
+
+            android:layout_below="@id/text_hot_items"
+            android:layout_height="100dp"
+           >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
